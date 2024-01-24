@@ -1,16 +1,18 @@
+header {
+  padding: 0;
+}
 nav {
   background-color: var(--white);
   display: flex;
- 
   flex-flow: row nowrap;
   grid-row: 1;
   padding: var(--default-padding);
   width: var(--full-w);
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
 }
 nav ul {
-  
   display: flex;
   flex-flow: column nowrap;
 }
@@ -37,7 +39,6 @@ a:hover {
 
 .body {
   display: grid;
-  width: 100vw;
   grid-template-rows: 5rem calc(100vh - 5rem);
   min-height: 100vh;
 }
@@ -80,11 +81,8 @@ section img {
   width: var(--full-w);
 }
 
-.name,
-.name:hover {
-  font-size: 3rem;
+.name {
   color: var(--yellow);
-  list-style-type: none;
 }
 
 section {
@@ -110,6 +108,7 @@ article > * {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   z-index: var(--z-20);
+  padding-left: 0rem !important;
 }
 
 .panel {
@@ -128,12 +127,14 @@ article > * {
   position: absolute;
   right: 0;
   top: 0;
+  object-fit: cover;
 }
 .panel img {
   filter: brightness(0.33);
   height: var(--full-h);
   border: solid 2px var(--white);
 }
+
 .panel span {
   align-items: center;
   display: flex;
@@ -437,6 +438,12 @@ article > * {
   .panel:nth-of-type(7) span {
     animation-delay: 5.2s;
   }
+  .link a {
+    font-size: 2em;
+  }
+  .cta {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -708,10 +715,13 @@ html {
     flex: 1;
   }
   .link {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .cta {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 4em;
   }
 }
 
@@ -719,4 +729,7 @@ nav p {
   text-align: center;
   font-size: 1.5rem;
   color: var(--yellow);
+}
+li {
+  padding-left: 0 !important;
 }

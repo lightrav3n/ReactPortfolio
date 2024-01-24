@@ -1,54 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.png";
+import { faArtstation, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import "../style/FooterStyle.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Footer extends React.Component {
   render() {
     return (
       <footer className="foot">
-        <ul>
-          <li>
-            <a href="https://www.artstation.com/davidalex" className="link">
-              <i className="fa-brands fa-artstation"></i> Artstation
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/alexdavidr" className="link">
-              <i className="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-          </li>
-          <li>
-            <Link to="/contact.html" className="cta">
-              <i className="fa-solid fa-address-book"></i> Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="left">
+          <Link to="https://www.artstation.com/davidalex" className="link">
+          <FontAwesomeIcon icon={faArtstation} /> Artstation 
+          </Link>
+          <Link to="https://www.linkedin.com/in/alexdavidr" className="link">
+          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn 
+          </Link>{" "}
+          <Link to="/Contact" className="link">
+          <FontAwesomeIcon icon={faEnvelope} /> Contact 
+          </Link>
+        </div>{" "}
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/set_design.html">Set Design</Link>
+            <Link to="/Sets">Set Design</Link>
           </li>
           <li>
-            <Link to="/product_design.html">Product Design</Link>
+            <Link to="/Designs">Product Design</Link>
           </li>
           <li>
-            <Link to="/painting.html">Digital Painting</Link>
+            <Link to="/Paintings">Digital Painting</Link>
           </li>
           <li>
-            <Link to="/persona_concept.html">Persona Concept</Link>
+            <Link to="/Concepts">Persona Concept</Link>
           </li>
           <li>
-            <Link to="/characters.html">Characters</Link>
+            <Link to="/Characters">Characters</Link>
           </li>
           <li>
-            <Link to="/sitmt.html">Mountain Shelter</Link>
+            <Link to="/Refuge">Mountain Shelter</Link>
           </li>
           <li>
-            <Link to="/webdev.html">Web Development</Link>
+            <Link to="/WebDev">Web Development</Link>
           </li>
         </ul>
         <div className="right">

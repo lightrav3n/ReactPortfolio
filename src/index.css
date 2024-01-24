@@ -1,5 +1,4 @@
 :root {
-  font-family: "Gochi Hand", cursive;
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
   --yellow: rgb(236, 157, 10);
@@ -8,8 +7,10 @@
   --full-w: 100%;
   --full-h: 100%;
   --h1-clamp: clamp(8rem, 10vw, 20rem);
-  --default-font-size: 1.5rem;
-  --default-heading-size: 2.5rem;
+  --h2-clamp: clamp(2rem, 1vw, 4rem);
+  --p-clamp: clamp(1rem, 1vw, 1.5rem);
+  --default-font-size: 2rem;
+  --default-heading-size: 3rem;
   --duration: 0.5s;
   --short-duration: 350ms;
   --gap: 0.4rem;
@@ -25,6 +26,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Gochi Hand", cursive;
+  letter-spacing: 1px;
 }
 
 html {

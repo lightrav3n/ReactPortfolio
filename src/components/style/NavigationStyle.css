@@ -11,7 +11,6 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 0.5fr 4fr 1.2fr;
-  width: 100vw;
   background-color: var(--white);
   padding: var(--default-padding);
   align-items: space-between;
@@ -20,6 +19,9 @@ header {
 .homeicon {
   align-items: center;
   justify-self: center;
+  padding-left: 3em;
+  padding-bottom: 2em;
+  padding-top: 1em;
 }
 
 .homeicon:hover {
@@ -32,6 +34,8 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
+  padding-right: 3em;
+  padding-top: 2em;
 }
 
 li:hover a {
@@ -40,13 +44,17 @@ li:hover a {
 main {
   animation: appear 2s forwards;
 }
-
+.menu ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* 
 .cta {
   font-size: var(--default-font-size);
   color: var(--black);
   padding: var(--default-padding);
   animation: appear 2s forwards;
-}
+} */
 
 .link {
   animation: appear 2s forwards;
@@ -54,23 +62,21 @@ main {
   font-size: var(--default-font-size);
 }
 
-
 .cta:hover,
 .cta:focus {
   font-size: var(--default-font-size);
   color: var(--yellow);
 }
-.header {
+/* .header {
   display: flex;
   justify-items: center;
   justify-content: center;
   text-align: center;
-}
+} */
 .menu {
-  display: flex;
-
   font-weight: 600;
   margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -150,6 +156,7 @@ li {
 
 #menu ul li {
   margin-bottom: 10px;
+  font-size: 3em;
 }
 
 #menu ul li a {
@@ -172,10 +179,12 @@ li {
   #menu-toggle-label {
     display: block;
   }
-
+  #menu ul {
+    flex-flow: column;
+  }
   #menu {
     width: 100%;
-    // top: 100%;
+
     left: 0;
     padding: 0;
   }
@@ -183,9 +192,9 @@ li {
     display: grid;
     grid-template-columns: 0.3fr 1.5fr 1fr;
   }
-  #menu ul li {
+  #menu ul li a {
     margin-bottom: 0px;
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: 600;
   }
   .header {
@@ -198,8 +207,14 @@ li {
     align-items: flex-end;
     justify-content: flex-end;
     text-align: end;
+    font-size: 1em;
   }
-
+  .header-elements ul li a {
+    font-size: 2em;
+  }
+  nav li a {
+    font-size: 6em;
+  }
   .cta {
     text-align: end;
     padding: 0;
@@ -216,10 +231,11 @@ li {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #menu-toggle-label {
     display: none;
   }
+
   #menu {
     display: block;
     position: static;
@@ -233,6 +249,10 @@ li {
     align-items: center;
     justify-content: flex-start;
   }
+  .header ul li a {
+    font-size: 3rem;
+    margin-left: 1em;
+  }
   .header-elements {
     display: flex;
     align-items: flex-end;
@@ -240,11 +260,11 @@ li {
     text-align: end;
   }
 
-  .cta {
+  /* .cta {
     text-align: end;
     padding: 0;
     margin: 0;
-  }
+  } */
 
   #menu ul li {
     margin-bottom: 0;

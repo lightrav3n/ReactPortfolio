@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "../style/NavigationStyle.css";
 import HomeIcon from "../../assets/icons/home.png";
-import Sets from "../routes/Sets";
 
-// Define your React component
+
 class Navigation extends React.Component {
   render() {
     return (
@@ -21,7 +21,7 @@ class Navigation extends React.Component {
             <span></span>
             <span></span>
           </label>
-          <nav id="menu" className="menu name">
+          <nav id="menu" className="menu">
             <ul>
               <li>
                 <Link to="./Sets">Sets</Link>
@@ -51,18 +51,17 @@ class Navigation extends React.Component {
           <ul>
             <li>
               <a href="https://www.artstation.com/davidalex" className="link">
-                My Artstation
+                Artstation
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/alexdavidr" className="link">
-                My LinkedIn
+                LinkedIn
               </a>
             </li>
             <li>
-              <Link to="/Contact" className="cta">
-                {" "}
-                Contact me{" "}
+              <Link to="/Contact" className="link">
+                Contact
               </Link>
             </li>
           </ul>
