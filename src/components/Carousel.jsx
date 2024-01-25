@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./style/MainStyle.css";
+// import "./style/CarouselStyle.css";
 
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
