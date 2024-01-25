@@ -3,6 +3,12 @@ img {
   max-width: 100%;
 }
 
+p a {
+  color: rgb(11, 37, 234);
+  font-size: 1em;
+}
+
+
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: var(--gray);
@@ -11,22 +17,23 @@ img {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 .carousel-indicators {
-  top: 0;
+  position: relative;
+  top: -35px;
+  /* width:max-content; */
 }
-.carousel-indicators > button[type="button"] {
-  width: 70px;
-}
+
 .carousel-indicators img {
   border: 2px solid rgb(0, 0, 0);
-  width: 70px;
+  width:70px;
   height: 70px;
+  margin-right: 5px;
   justify-content: center;
   align-items: center;
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
   position: relative;
-  top: -35px;
+  top: 0px;
 }
 .carousel-indicators img:hover {
   transform: scale(1.1);
@@ -39,19 +46,8 @@ img {
   padding: 5% 0;
 }
 
-h2 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 1rem;
-}
-
-p {
-  padding: 1rem;
-  font-size: 1rem;
-}
-
 .carousel-caption {
-  background-color: rgba(214, 214, 214, 0.8);
+  background-color: rgba(255, 252, 252, 0.8);
   color: black;
   width: 12vw;
   height: fit-content;
@@ -63,16 +59,22 @@ p {
 
 .carousel-caption p {
   font-size: var(--p-clamp);
+  color: black;
 }
 .carousel-caption h5 {
   font-size: var(--h2-clamp);
+  color: black;
 }
 
-p {
+.text p {
+  padding: 1rem;
   font-size: 1.5rem;
 }
 
-h2 {
+.text h2 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1rem;
   font-size: 2.5rem;
 }
 
@@ -80,5 +82,8 @@ h2 {
   .container {
     display: flex;
     flex-flow: column wrap;
+  }
+  .carousel-caption {
+    display: none;
   }
 }

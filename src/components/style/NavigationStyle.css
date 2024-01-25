@@ -285,3 +285,8 @@ li {
 .menu-expanded {
   margin-top: 400px;
 }
+
+.active-link {
+  text-decoration: underline !important;
+  text-underline-offset: 0.2em !important; 
+}

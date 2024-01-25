@@ -10,14 +10,14 @@ import Sets from "./components/routes/Sets.jsx";
 import Contact from "./components/routes/Contact.jsx";
 import Homepage from "./components/homepage.jsx";
 
-import "./App.css"
+import "./App.css";
 
 export default function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/" element={<Portfolio />}>
+        <Route path="/Portfolio" element={<Portfolio />}>
           <Route path="Sets" element={<Sets />} />
           <Route path="Designs" element={<Designs />} />
           <Route path="Paintings" element={<Paintings />} />

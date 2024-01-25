@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Servier1 from "../assets/images/Scenography/Servier/Servier1.jpg";
-import GreenPepper from "../assets/images/Product Design/Green Pepper/1.jpg";
-import DigitalPainting from "../assets/images/Digital Painting/3.jpg";
-import CharacterDesign from "../assets/images/Character Design/1.jpg";
-import Character from "../assets/images/Character Design/0.jpg";
+import GreenPepper from "../assets/images/ProductDesign/GreenPepper/1.jpg";
+import DigitalPainting from "../assets/images/DigitalPainting/3.jpg";
+import CharacterDesign from "../assets/images/CharacterDesign/1.jpg";
+import Character from "../assets/images/CharacterDesign/0.jpg";
 import SITMT from "../assets/images/SITMT/ALEX_David_246D_Page_11.jpg";
-import WebDev from "../assets/images/Web Development/Peters/1.jpg";
+import WebDev from "../assets/images/WebDevelopment/Peters/1.jpg";
 
 import "./style/HomePageStyle.css";
 
@@ -44,43 +44,43 @@ const Homepage = () => {
         <article className="hero">
           <ul className="panels">
             <li className="panel">
-              <Link to="/sets">
+              <Link to="/Portfolio/sets">
                 <span> Sets </span>
               </Link>
               <img src={Servier1} alt="Set Design" />
             </li>
             <li className="panel">
-              <Link to="/designs">
+              <Link to="/Portfolio/designs">
                 <span> Designs </span>
               </Link>
               <img src={GreenPepper} alt="Product Design" />
             </li>
             <li className="panel">
-              <Link to="/Paintings">
+              <Link to="/Portfolio/Paintings">
                 <span> Paintings </span>
               </Link>
               <img src={DigitalPainting} alt="Paintings" />
             </li>
             <li className="panel">
-              <Link to="/Concepts">
+              <Link to="/Portfolio/Concepts">
                 <span> Concepts </span>
               </Link>
               <img src={CharacterDesign} alt="Persona Concepts" />
             </li>
             <li className="panel">
-              <Link to="/Persona">
+              <Link to="/Portfolio/Persona">
                 <span> Persona </span>
               </Link>
               <img src={Character} alt="Characters" />
             </li>
             <li className="panel">
-              <Link to="/Refuge">
+              <Link to="/Portfolio/Refuge">
                 <span> Refuge </span>
               </Link>
               <img src={SITMT} alt="SITMT" />
             </li>
             <li className="panel">
-              <Link to="/WebDev">
+              <Link to="/Portfolio/WebDev">
                 <span> WebDev </span>
               </Link>
               <img src={WebDev} alt="webdevelopment" />

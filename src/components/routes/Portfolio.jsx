@@ -5,15 +5,13 @@ import { Outlet } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="body" >
+    <>
       <Navigation />
 
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
 
       <Footer />
-    </div>
+    </>
   );
 };
 
