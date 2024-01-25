@@ -11,5 +11,5 @@ root.render(
   // 3. connect the App to the browser's URL
   <HashRouter>
     <App />
-  </HashRouter>
+  </HashRouter> 
 );
